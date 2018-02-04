@@ -21,7 +21,7 @@ protocol ApiResource  {
     associatedtype Model:Codable
     var apiType:ApiKeys { get }
     var recipeType : String { get }
- //   func makeModel(for data: Data) -> Model
+    func makeModel(for data: Data) -> Model
 }
 
 extension ApiResource {
@@ -32,15 +32,14 @@ extension ApiResource {
         return URL(string: url)!
     }
     
-//    func makeModel(data: Data) -> [Model]? {
-//        do {
-//            let decoder = JSONDecoder()
-//            let result = try decoder.decode(Model.self, from:data)
-//            return result?
-//            } catch {
-//                print("JSON Error: \(error)")
-//                return []
-//        }
-//
- // }
+    func makeModel(data: Data) -> [Model]? {
+        do {
+            let decoder = JSONDecoder()
+            let result = try decoder.decode(Model.self, from:data)
+            return result as? [Self.Model]
+            } catch {
+            print("JSON Error: \(error)")
+            return []
+        }
+  }
 }

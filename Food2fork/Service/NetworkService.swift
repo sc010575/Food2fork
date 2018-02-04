@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+class NetworkService {
+    enum State {
+        case notSearchedYet
+        case loading
+        case noResults
+        case results([Recipe])
+    }
+}

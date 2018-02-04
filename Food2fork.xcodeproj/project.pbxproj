@@ -16,6 +16,7 @@
 		C50FC9A220272464007A4D65 /* Food2forkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FC9A120272464007A4D65 /* Food2forkUITests.swift */; };
 		C50FC9B720272C63007A4D65 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FC9B620272C63007A4D65 /* NetworkService.swift */; };
 		C532A78720276A8600545AC2 /* ApiResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532A78620276A8600545AC2 /* ApiResources.swift */; };
+		C55BBDD2202776010024F736 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDD1202776010024F736 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C50FC9A320272464007A4D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C50FC9B620272C63007A4D65 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C532A78620276A8600545AC2 /* ApiResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResources.swift; sourceTree = "<group>"; };
+		C55BBDD1202776010024F736 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Food2fork/Service/Recipe.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		C50FC9B320272843007A4D65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C55BBDD1202776010024F736 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				C50FC9B720272C63007A4D65 /* NetworkService.swift in Sources */,
 				C532A78720276A8600545AC2 /* ApiResources.swift in Sources */,
 				C50FC98220272463007A4D65 /* AppDelegate.swift in Sources */,
+				C55BBDD2202776010024F736 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
