@@ -26,6 +26,7 @@
 		C55BBDE82028A08B0024F736 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDE72028A08B0024F736 /* FavoriteViewModel.swift */; };
 		C55BBDF32028C8640024F736 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55BBDEF2028C8640024F736 /* Favorite.storyboard */; };
 		C55BBDF42028C8640024F736 /* SearchRecipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55BBDF12028C8640024F736 /* SearchRecipe.storyboard */; };
+		C55BBDF62028E5730024F736 /* SearchRecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDF52028E5730024F736 /* SearchRecipeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		C55BBDE72028A08B0024F736 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		C55BBDF02028C8640024F736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorite.storyboard; sourceTree = "<group>"; };
 		C55BBDF22028C8640024F736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchRecipe.storyboard; sourceTree = "<group>"; };
+		C55BBDF52028E5730024F736 /* SearchRecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				C55BBDDB202878560024F736 /* FavoriteTableViewCell.swift */,
+				C55BBDF52028E5730024F736 /* SearchRecipeCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				C532A78720276A8600545AC2 /* ApiResources.swift in Sources */,
 				C55BBDD920286D840024F736 /* MainTabBarController.swift in Sources */,
 				C55BBDDF202884810024F736 /* UIImageView+DownloadImage.swift in Sources */,
+				C55BBDF62028E5730024F736 /* SearchRecipeCollectionViewCell.swift in Sources */,
 				C50FC98220272463007A4D65 /* AppDelegate.swift in Sources */,
 				C55BBDD7202866DA0024F736 /* FavoriteViewController.swift in Sources */,
 				C55BBDE82028A08B0024F736 /* FavoriteViewModel.swift in Sources */,
