@@ -13,13 +13,13 @@ import UIKit
 //Url: https://food2fork.com/api/search?key=a514f84afcb013e7b533f42653e5343c&q=shredded%20chicken
 
 
-enum ApiKeys {
+enum RequestType {
     case favourite
     case publisher
 }
 
 protocol ApiResource  {
-    var apiType:ApiKeys { get }
+    var requestType:RequestType { get }
     var recipeType : String { get }
 }
 
@@ -27,7 +27,7 @@ extension ApiResource {
     var url: URL? {
         let baseUrl = "https://food2fork.com/api/search"
         let apiKey = "key=a514f84afcb013e7b533f42653e5343c"
-        let parameter = apiType == .favourite ? "" : "&q" + recipeType
+        let parameter = requestType == .favourite ? "" : "&q" + recipeType
         let url = baseUrl + "?" + apiKey + parameter
         guard let finalUrl = URL(string: url) else { return nil}
         return finalUrl

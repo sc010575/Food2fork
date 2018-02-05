@@ -25,6 +25,7 @@ class Recipe: Codable {
     var recipeId : String?
     var socialRank : Int?
     var publisherUrl: String
+    var imageUrl : String?
     
      enum CodingKeys: String, CodingKey {
         case publisher
@@ -34,6 +35,8 @@ class Recipe: Codable {
         case recipeId = "recipe_id"
         case socialRank = "social_rank"
         case publisherUrl = "publisher_url"
+        case imageUrl = "image_url"
+        
     }
 }
 

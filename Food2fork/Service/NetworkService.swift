@@ -12,7 +12,7 @@ import UIKit
 typealias SearchComplete = (Bool) -> Void
 
 class NetworkService:ApiResource {
-    var apiType: ApiKeys
+    var requestType: RequestType
     
     enum State {
         case notSearchedYet
@@ -25,12 +25,11 @@ class NetworkService:ApiResource {
     private var dataTask: URLSessionDataTask? = nil
     private(set) var state: State = .notSearchedYet
     
-    init(for key: ApiKeys) {
-        apiType = key
+    init(for key: RequestType) {
+        requestType = key
     }
     
     func performSearch(for text: String, completion: @escaping SearchComplete) {
-        if !text.isEmpty {
             dataTask?.cancel()
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
             
@@ -71,7 +70,6 @@ class NetworkService:ApiResource {
                 }
             })
             dataTask?.resume()
-        }
     }
 }
     
