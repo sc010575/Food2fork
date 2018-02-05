@@ -23,7 +23,7 @@ class Recipe: Codable {
     var title:String?
     var sourceURL: String?
     var recipeId : String?
-    var socialRank : Int?
+    var socialRank : Double?
     var publisherUrl: String
     var imageUrl : String?
     

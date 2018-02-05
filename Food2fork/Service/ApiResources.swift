@@ -27,7 +27,7 @@ extension ApiResource {
     var url: URL? {
         let baseUrl = "https://food2fork.com/api/search"
         let apiKey = "key=a514f84afcb013e7b533f42653e5343c"
-        let parameter = requestType == .favourite ? "" : "&q" + recipeType
+        let parameter = requestType == .favourite ? "" : "&q=" + recipeType
         let url = baseUrl + "?" + apiKey + parameter
         guard let finalUrl = URL(string: url) else { return nil}
         return finalUrl
