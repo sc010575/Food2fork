@@ -19,6 +19,7 @@
 		C55BBDD2202776010024F736 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDD1202776010024F736 /* Recipe.swift */; };
 		C55BBDD7202866DA0024F736 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDD6202866DA0024F736 /* FavoriteViewController.swift */; };
 		C55BBDD920286D840024F736 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDD820286D840024F736 /* MainTabBarController.swift */; };
+		C55BBDDC202878560024F736 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDDB202878560024F736 /* FavoriteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +55,10 @@
 		C50FC9A320272464007A4D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C50FC9B620272C63007A4D65 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C532A78620276A8600545AC2 /* ApiResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResources.swift; sourceTree = "<group>"; };
-		C55BBDD1202776010024F736 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Food2fork/Service/Recipe.swift; sourceTree = SOURCE_ROOT; };
+		C55BBDD1202776010024F736 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Food2fork/Model/Recipe.swift; sourceTree = SOURCE_ROOT; };
 		C55BBDD6202866DA0024F736 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		C55BBDD820286D840024F736 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C55BBDDB202878560024F736 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +109,10 @@
 		C50FC98020272463007A4D65 /* Food2fork */ = {
 			isa = PBXGroup;
 			children = (
+				C55BBDDD202879410024F736 /* Model */,
+				C55BBDDA202878360024F736 /* View */,
 				C50FC9B520272A4C007A4D65 /* Service */,
 				C50FC9B42027285B007A4D65 /* UIResources */,
-				C50FC9B320272843007A4D65 /* Model */,
-				C50FC9B220272830007A4D65 /* ViewModel */,
-				C50FC9B120272825007A4D65 /* Views */,
 				C50FC9B020272811007A4D65 /* ViewController */,
 				C50FC98120272463007A4D65 /* AppDelegate.swift */,
 				C50FC98820272464007A4D65 /* Assets.xcassets */,
@@ -148,28 +149,6 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		C50FC9B120272825007A4D65 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		C50FC9B220272830007A4D65 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		C50FC9B320272843007A4D65 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C55BBDD1202776010024F736 /* Recipe.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		C50FC9B42027285B007A4D65 /* UIResources */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +165,22 @@
 				C532A78620276A8600545AC2 /* ApiResources.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C55BBDDA202878360024F736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C55BBDDB202878560024F736 /* FavoriteTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C55BBDDD202879410024F736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C55BBDD1202776010024F736 /* Recipe.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C50FC98420272463007A4D65 /* SearchViewController.swift in Sources */,
+				C55BBDDC202878560024F736 /* FavoriteTableViewCell.swift in Sources */,
 				C50FC9B720272C63007A4D65 /* NetworkService.swift in Sources */,
 				C532A78720276A8600545AC2 /* ApiResources.swift in Sources */,
 				C55BBDD920286D840024F736 /* MainTabBarController.swift in Sources */,

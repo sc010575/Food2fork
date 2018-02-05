@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="sq7-rD-51m">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="80" id="sq7-rD-51m" customClass="FavoriteTableViewCell" customModule="Food2fork" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sq7-rD-51m" id="ep7-FI-E41">
@@ -62,6 +62,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="HEv-HR-B95" secondAttribute="trailing" constant="10" id="LDb-y1-hCZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foodImage" destination="KxS-Il-oBu" id="uP0-Mo-Xk8"/>
+                                            <outlet property="publisher" destination="EAY-HI-Geg" id="mFv-S3-LRX"/>
+                                            <outlet property="title" destination="l3g-2z-Ans" id="0Bz-my-AIr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
