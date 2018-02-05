@@ -9,15 +9,15 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    
+    var networkService:NetworkService = NetworkService(for: .publisher)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        networkService.performSearch(for: "Chicken") { success in
+            print("downloaded")
+        }
     }
 
 

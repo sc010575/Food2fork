@@ -17,6 +17,8 @@
 		C50FC9B720272C63007A4D65 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FC9B620272C63007A4D65 /* NetworkService.swift */; };
 		C532A78720276A8600545AC2 /* ApiResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C532A78620276A8600545AC2 /* ApiResources.swift */; };
 		C55BBDD2202776010024F736 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDD1202776010024F736 /* Recipe.swift */; };
+		C55BBDD7202866DA0024F736 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDD6202866DA0024F736 /* FavoriteViewController.swift */; };
+		C55BBDD920286D840024F736 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDD820286D840024F736 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C50FC9B620272C63007A4D65 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C532A78620276A8600545AC2 /* ApiResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResources.swift; sourceTree = "<group>"; };
 		C55BBDD1202776010024F736 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Food2fork/Service/Recipe.swift; sourceTree = SOURCE_ROOT; };
+		C55BBDD6202866DA0024F736 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		C55BBDD820286D840024F736 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				C50FC98320272463007A4D65 /* SearchViewController.swift */,
+				C55BBDD6202866DA0024F736 /* FavoriteViewController.swift */,
+				C55BBDD820286D840024F736 /* MainTabBarController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 				C50FC98420272463007A4D65 /* SearchViewController.swift in Sources */,
 				C50FC9B720272C63007A4D65 /* NetworkService.swift in Sources */,
 				C532A78720276A8600545AC2 /* ApiResources.swift in Sources */,
+				C55BBDD920286D840024F736 /* MainTabBarController.swift in Sources */,
 				C50FC98220272463007A4D65 /* AppDelegate.swift in Sources */,
+				C55BBDD7202866DA0024F736 /* FavoriteViewController.swift in Sources */,
 				C55BBDD2202776010024F736 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
