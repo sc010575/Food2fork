@@ -14,8 +14,6 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         self.delegate = self
         self.selectedIndex = 0
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.navigationBar.tintColor = .blue
         self.title = "Recipe Fevorite"
     }
 }

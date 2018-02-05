@@ -23,6 +23,9 @@
 		C55BBDDF202884810024F736 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDDE202884810024F736 /* UIImageView+DownloadImage.swift */; };
 		C55BBDE4202889580024F736 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55BBDE0202889570024F736 /* LoadingCell.xib */; };
 		C55BBDE5202889580024F736 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55BBDE2202889580024F736 /* NothingFoundCell.xib */; };
+		C55BBDE82028A08B0024F736 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55BBDE72028A08B0024F736 /* FavoriteViewModel.swift */; };
+		C55BBDF32028C8640024F736 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55BBDEF2028C8640024F736 /* Favorite.storyboard */; };
+		C55BBDF42028C8640024F736 /* SearchRecipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55BBDF12028C8640024F736 /* SearchRecipe.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		C55BBDDE202884810024F736 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		C55BBDE1202889570024F736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
 		C55BBDE3202889580024F736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		C55BBDE72028A08B0024F736 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		C55BBDF02028C8640024F736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Favorite.storyboard; sourceTree = "<group>"; };
+		C55BBDF22028C8640024F736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchRecipe.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		C50FC98020272463007A4D65 /* Food2fork */ = {
 			isa = PBXGroup;
 			children = (
+				C55BBDE620289F240024F736 /* ViewModel */,
 				C55BBDDD202879410024F736 /* Model */,
 				C55BBDDA202878360024F736 /* View */,
 				C50FC9B520272A4C007A4D65 /* Service */,
@@ -158,6 +165,8 @@
 		C50FC9B42027285B007A4D65 /* UIResources */ = {
 			isa = PBXGroup;
 			children = (
+				C55BBDEF2028C8640024F736 /* Favorite.storyboard */,
+				C55BBDF12028C8640024F736 /* SearchRecipe.storyboard */,
 				C55BBDE0202889570024F736 /* LoadingCell.xib */,
 				C55BBDE2202889580024F736 /* NothingFoundCell.xib */,
 				C50FC98520272464007A4D65 /* Main.storyboard */,
@@ -190,6 +199,14 @@
 				C55BBDD1202776010024F736 /* Recipe.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C55BBDE620289F240024F736 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C55BBDE72028A08B0024F736 /* FavoriteViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +318,9 @@
 			files = (
 				C50FC98C20272464007A4D65 /* LaunchScreen.storyboard in Resources */,
 				C50FC98920272464007A4D65 /* Assets.xcassets in Resources */,
+				C55BBDF32028C8640024F736 /* Favorite.storyboard in Resources */,
 				C55BBDE4202889580024F736 /* LoadingCell.xib in Resources */,
+				C55BBDF42028C8640024F736 /* SearchRecipe.storyboard in Resources */,
 				C55BBDE5202889580024F736 /* NothingFoundCell.xib in Resources */,
 				C50FC98720272464007A4D65 /* Main.storyboard in Resources */,
 			);
@@ -336,6 +355,7 @@
 				C55BBDDF202884810024F736 /* UIImageView+DownloadImage.swift in Sources */,
 				C50FC98220272463007A4D65 /* AppDelegate.swift in Sources */,
 				C55BBDD7202866DA0024F736 /* FavoriteViewController.swift in Sources */,
+				C55BBDE82028A08B0024F736 /* FavoriteViewModel.swift in Sources */,
 				C55BBDD2202776010024F736 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +422,22 @@
 				C55BBDE3202889580024F736 /* Base */,
 			);
 			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		C55BBDEF2028C8640024F736 /* Favorite.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55BBDF02028C8640024F736 /* Base */,
+			);
+			name = Favorite.storyboard;
+			sourceTree = "<group>";
+		};
+		C55BBDF12028C8640024F736 /* SearchRecipe.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55BBDF22028C8640024F736 /* Base */,
+			);
+			name = SearchRecipe.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

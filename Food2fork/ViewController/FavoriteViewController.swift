@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 struct TableViewCellIdentifiers {
     static let fevoriteCell = "FavoriteTableViewCell"
@@ -42,6 +43,8 @@ class FavoriteViewController: UIViewController {
         tableView.reloadData()
     }
 }
+
+// MARK: UITableViewDelegate, UITableViewDataSource
 
 extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource {
 
@@ -89,7 +92,20 @@ extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch networkService.state {
+            case .loading,.noResults,.notSearchedYet:
+                return
+            case .results(let list):
+                let searchResult = list[indexPath.row]
+                guard let sourceUrlString = searchResult.sourceURL,
+                      let sourceUrl = URL(string: sourceUrlString) else { return }
+                let svc = SFSafariViewController(url: sourceUrl)
+                self.present(svc, animated: true, completion: nil)
+        }
+    }
 }
 
 // MARK: Private Methods
